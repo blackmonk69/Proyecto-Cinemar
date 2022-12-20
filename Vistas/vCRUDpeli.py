@@ -1,4 +1,6 @@
 import sys
+import os
+sys.path.insert(0, os.curdir)
 from Vistas.vFuncion import *  #ningun import anda
 from Clases.Butaca import *
 from Clases.Usuario import Usuario
@@ -9,14 +11,11 @@ from PyQt5.QtWidgets import QMessageBox,QTableView
 from PyQt5.QtWidgets import QLineEdit
 from PyQt5.QtGui import QPixmap
 import sqlite3
-
-BD = "./Cinemar.db"
-ICON = "./Assets/cine.png"
-
+from BD.bdPeli import *
 
 class PantallaModi(QWidget):
-    #objCRUDE=classCRUDEPeli() 
-    #objCRUDE.CreaPeli("./Cinemar.db","yo","yo","yo","yo")
+    objCRUDE=classCRUDEPeli() 
+    
     usuarioActivo=False
     def __init__(self):
         super(PantallaModi, self).__init__()
@@ -83,12 +82,13 @@ class PantallaModi(QWidget):
             QMessageBox.critical(self, "Error","No pueden haber campos vacios")
             return
         else:
-            conn = sqlite3.connect(BD)
-            cur = conn.cursor()
+            objCRUDE.CreaPeli("./Cinemar.db","yo","yo","yo","yo")
+            #conn = sqlite3.connect(BD)
+            """  cur = conn.cursor()
             query =f"insert into pelicula (titulo, duracion,clasificacion, director) values ('{titulo}','{duracion}','{clasi}', '{director}')"
             cur.execute(query)
             conn.commit()
-            QMessageBox.critical(self, "Exito","Se ha creado la pelicula Exitosamente")
+            QMessageBox.critical(self, "Exito","Se ha creado la pelicula Exitosamente") """
             self.btnGrabaNueva.setVisible(False)
             
             self.cargaTablaPeli()
@@ -129,9 +129,7 @@ class PantallaModi(QWidget):
         conn.commit()
         QMessageBox.critical(self, "Confirmacion Borrado","Se ha borrado la Pelicula")
         self.cargaTablaPeli()       
-        
-    
-        
+      
             
     def cargaTablaPeli(self):
         conn = sqlite3.connect(BD)
@@ -151,3 +149,4 @@ class PantallaModi(QWidget):
             self.tableListUsu.setItem(tablerow, 4, QtWidgets.QTableWidgetItem(fila[4]))            
             tablerow+=1    
         #conn.close        
+      

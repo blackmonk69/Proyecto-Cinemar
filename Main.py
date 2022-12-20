@@ -7,12 +7,14 @@ Created on 1 nov. 2022
 import sys
 from PyQt5.QtWidgets import  QApplication
 from Vistas.vLogin import ventanaLogin
-
+import sys
+import os
+from Vistas.vCRUDpeli import *
 BD = "./Cinemar.db"
 ICON = "./Assets/cine.png"
 
 app = QApplication(sys.argv)
-mainwindow = ventanaLogin()
+mainwindow = PantallaModi()
 try:
     sys.exit(app.exec_())
 except:
