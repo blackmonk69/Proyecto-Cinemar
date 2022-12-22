@@ -14,10 +14,11 @@ import sqlite3
 from BD.bdPeli import *
 
 class PantallaModi(QWidget):
-    objCRUDE=classCRUDEPeli() 
     
     usuarioActivo=False
     def __init__(self):
+        self.objCRUDE=classCRUDEPeli() 
+      
         super(PantallaModi, self).__init__()
         loadUi(".\Vistas\CRUDPeli.ui",self)
         self.id=0
@@ -82,13 +83,8 @@ class PantallaModi(QWidget):
             QMessageBox.critical(self, "Error","No pueden haber campos vacios")
             return
         else:
-            objCRUDE.CreaPeli("./Cinemar.db","yo","yo","yo","yo")
-            #conn = sqlite3.connect(BD)
-            """  cur = conn.cursor()
-            query =f"insert into pelicula (titulo, duracion,clasificacion, director) values ('{titulo}','{duracion}','{clasi}', '{director}')"
-            cur.execute(query)
-            conn.commit()
-            QMessageBox.critical(self, "Exito","Se ha creado la pelicula Exitosamente") """
+            self.objCRUDE.CreaPeli(BD,titulo,duracion,director,clasi)
+            QMessageBox.critical(self, "Exito","Se ha creado la pelicula Exitosamente")
             self.btnGrabaNueva.setVisible(False)
             
             self.cargaTablaPeli()
@@ -105,11 +101,7 @@ class PantallaModi(QWidget):
             QMessageBox.critical(self, "Error","No pueden haber campos vacios")
             return
         else:
-            conn = sqlite3.connect(BD)
-            cur = conn.cursor()
-            query =f"update pelicula set titulo='{titulo}', duracion='{duracion}',clasificacion='{clasi}', director='{director}' where id_pelicula='{idpeli}'"
-            cur.execute(query)
-            conn.commit()
+            self.objCRUDE.modificarPelicula(BD,titulo,duracion,director,clasi,idpeli)
             QMessageBox.critical(self, "Exito","Se ha modificado la pelicula Exitosamente")
             self.cargaTablaPeli()  
                   
@@ -117,16 +109,12 @@ class PantallaModi(QWidget):
         Idpeli = self.boxIdpeli.text()
         resp = QMessageBox.question(self, 'Advertencia', "Desea borrar la Pelicula?", QMessageBox.Yes | QMessageBox.Cancel)
         if resp == QMessageBox.Cancel:
-            
             QMessageBox.critical(self, "Cancelado","Se cancela la Operacion")
             return
-        conn = sqlite3.connect(BD)
-        cur = conn.cursor()
+        
         if Idpeli=="" :
             return
-        query =f"delete FROM pelicula WHERE id_pelicula ='{Idpeli}'"
-        cur.execute(query)
-        conn.commit()
+        self.objCRUDE.eliminarPelicula (BD,Idpeli)    
         QMessageBox.critical(self, "Confirmacion Borrado","Se ha borrado la Pelicula")
         self.cargaTablaPeli()       
       

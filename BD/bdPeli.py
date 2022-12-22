@@ -25,9 +25,14 @@ class classCRUDEPeli:
     self.exito=True
     return self.exito
 
-  def eliminarPelicula (BD,id_pelicula): 
-    pass
+  def eliminarPelicula (self,BD,id_peli):
+    self.exito=False
+    conn = sqlite3.connect(BD)
+    cur = conn.cursor()
+    query =f"delete FROM pelicula WHERE id_pelicula ='{id_peli}'"
+    cur.execute(query)
+    conn.commit()
+    conn.close
+    self.exito=True
+    return self.exito
     
-
-  def nuevaPelicula (BD,id_pelicula):
-    pass
