@@ -93,7 +93,7 @@ p, li { white-space: pre-wrap; }
      <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>DNI</string>
+     <string>ID</string>
     </property>
    </widget>
    <widget class="QTextEdit" name="boxApellido">
@@ -131,7 +131,7 @@ p, li { white-space: pre-wrap; }
      <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>Contraseña</string>
+     <string>PASSWORD</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
@@ -147,7 +147,7 @@ p, li { white-space: pre-wrap; }
      <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>APELLIDO</string>
+     <string>SURNAME</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
@@ -209,7 +209,7 @@ p, li { white-space: pre-wrap; }
      <rect>
       <x>40</x>
       <y>190</y>
-      <width>379</width>
+      <width>161</width>
       <height>16</height>
      </rect>
     </property>
@@ -217,7 +217,7 @@ p, li { white-space: pre-wrap; }
      <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>EDAD</string>
+     <string>AGE</string>
     </property>
    </widget>
    <widget class="QTextEdit" name="boxEmail">
@@ -269,7 +269,7 @@ p, li { white-space: pre-wrap; }
      <rect>
       <x>40</x>
       <y>120</y>
-      <width>379</width>
+      <width>231</width>
       <height>16</height>
      </rect>
     </property>
@@ -277,7 +277,7 @@ p, li { white-space: pre-wrap; }
      <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>NOMBRE</string>
+     <string>NAME</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btnConfirmar">
@@ -316,7 +316,7 @@ border: 2px solid black;
 box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);</string>
     </property>
     <property name="text">
-     <string>BUSCAR</string>
+     <string>FIND</string>
     </property>
    </widget>
    <widget class="QTableWidget" name="tableListUsu">

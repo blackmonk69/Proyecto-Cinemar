@@ -56,7 +56,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Bienvenido</string>
+      <string>Welcome</string>
      </property>
      <property name="scaledContents">
       <bool>false</bool>
@@ -87,7 +87,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Reservar</string>
+       <string>Reserve</string>
       </property>
      </widget>
      <widget class="QPushButton" name="btnModificar">
@@ -97,7 +97,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Modicar Datos</string>
+       <string>Update Profile</string>
       </property>
      </widget>
      <widget class="QPushButton" name="btnSala">
@@ -107,7 +107,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Salas</string>
+       <string>Halls</string>
       </property>
      </widget>
      <widget class="QPushButton" name="btnPelicula">
@@ -117,7 +117,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Peliculas</string>
+       <string>Movies</string>
       </property>
      </widget>
      <widget class="QPushButton" name="btnFuncion">
@@ -127,7 +127,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Funciones</string>
+       <string>Premieres</string>
       </property>
      </widget>
      <widget class="QPushButton" name="btnButaca">
@@ -137,7 +137,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Butacas</string>
+       <string>Seats</string>
       </property>
      </widget>
      <widget class="QPushButton" name="btnLogout">
@@ -147,7 +147,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Cerrar Sesion</string>
+       <string>Log Out</string>
       </property>
      </widget>
     </widget>
@@ -159,7 +159,7 @@
      <x>0</x>
      <y>0</y>
      <width>750</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuMenu">

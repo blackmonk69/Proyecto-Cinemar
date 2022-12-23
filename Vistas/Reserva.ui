@@ -108,27 +108,27 @@
      </property>
      <widget class="QPushButton" name="btnReserva">
       <property name="text">
-       <string>Reservar</string>
+       <string>Reservation</string>
       </property>
      </widget>
      <widget class="QPushButton" name="btnCancelar">
       <property name="text">
-       <string>Cancelar Reserva</string>
+       <string>Cancel Reservation</string>
       </property>
      </widget>
      <widget class="QPushButton" name="btnVer">
       <property name="text">
-       <string>Ver Reservas</string>
+       <string>Browse Reservation</string>
       </property>
      </widget>
      <widget class="QPushButton" name="btnHistorico">
       <property name="text">
-       <string>Histórico Reservas</string>
+       <string>Reservation History</string>
       </property>
      </widget>
      <widget class="QLabel" name="lblButaca">
       <property name="text">
-       <string>Butaca</string>
+       <string>Seats</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -143,7 +143,7 @@
      <x>0</x>
      <y>0</y>
      <width>750</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuMenu">

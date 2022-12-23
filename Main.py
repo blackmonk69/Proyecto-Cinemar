@@ -14,7 +14,7 @@ BD = "./Cinemar.db"
 ICON = "./Assets/cine.png"
 
 app = QApplication(sys.argv)
-mainwindow = PantallaModi()
+mainwindow = ventanaLogin()
 try:
     sys.exit(app.exec_())
 except:

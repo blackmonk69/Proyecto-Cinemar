@@ -65,7 +65,7 @@
       <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;INGRESE LOS DATOS&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Please log in&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_3">
@@ -82,7 +82,7 @@
       <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
      </property>
      <property name="text">
-      <string>Ingrese DNI</string>
+      <string>ID</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="box_email">
@@ -96,7 +96,7 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
       <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
      </property>
      <property name="text">
-      <string>Ingrese Clave</string>
+      <string>PASSWORD</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="box_clave">
@@ -203,7 +203,7 @@ background-color: rgb(170, 255, 255);
 font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
      </property>
      <property name="text">
-      <string>ENTRAR</string>
+      <string>LOG IN</string>
      </property>
     </widget>
     <widget class="QPushButton" name="btn_registrar">
@@ -213,7 +213,7 @@ background-color: rgb(170, 255, 255);
 font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
      </property>
      <property name="text">
-      <string>REGISTRARSE</string>
+      <string>SIGN UP</string>
      </property>
     </widget>
    </widget>

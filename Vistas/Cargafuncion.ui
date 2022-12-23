@@ -52,32 +52,32 @@
      </property>
      <column>
       <property name="text">
-       <string>Sala Número</string>
+       <string>Hall No</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>Tipo Sala</string>
+       <string>Hall Type</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>Capacidad</string>
+       <string>Capacity</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>Ocupada</string>
+       <string>Full</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>Precio</string>
+       <string>Price</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>Pelicula</string>
+       <string>Movie</string>
       </property>
      </column>
     </widget>
@@ -95,7 +95,7 @@
      </property>
      <widget class="QLabel" name="lblFecha">
       <property name="text">
-       <string>Fecha Función</string>
+       <string>DATE</string>
       </property>
      </widget>
      <widget class="QLineEdit" name="txtFecha">
@@ -105,7 +105,7 @@
      </widget>
      <widget class="QLabel" name="lblHora">
       <property name="text">
-       <string>Hora Función</string>
+       <string>TIME</string>
       </property>
      </widget>
      <widget class="QLineEdit" name="txtHorario">
@@ -115,7 +115,7 @@
      </widget>
      <widget class="QPushButton" name="btnCargar">
       <property name="text">
-       <string>&amp;Cargar</string>
+       <string>UPDATE</string>
       </property>
      </widget>
     </widget>
@@ -127,7 +127,7 @@
      <x>0</x>
      <y>0</y>
      <width>650</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuMenu">

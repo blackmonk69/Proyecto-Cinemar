@@ -55,7 +55,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb
      <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>CODIGO PELICULA</string>
+     <string>Movie Id</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
@@ -71,7 +71,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb
      <string notr="true">color: rgb(0,0, 0);</string>
     </property>
     <property name="text">
-     <string>DURACION</string>
+     <string>DURATION</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_6">
@@ -87,7 +87,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb
      <string notr="true">color: rgb(0,0, 0);</string>
     </property>
     <property name="text">
-     <string>CLASIFICACION</string>
+     <string>RATING</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -103,7 +103,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb
      <string notr="true">color: rgb(0,0, 0);</string>
     </property>
     <property name="text">
-     <string>TITULO</string>
+     <string>TITLE</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btnConfirmar">
@@ -126,7 +126,7 @@ border: 1px solid black;
 border-style: outset</string>
     </property>
     <property name="text">
-     <string>MODIFICAR</string>
+     <string>UPDATE</string>
     </property>
    </widget>
    <widget class="QTableWidget" name="tableListUsu">
@@ -147,7 +147,7 @@ background:rgb(167, 212, 235);</string>
     </attribute>
     <column>
      <property name="text">
-      <string>Codigo Peli</string>
+      <string>Movie Id</string>
      </property>
      <property name="font">
       <font>
@@ -157,7 +157,7 @@ background:rgb(167, 212, 235);</string>
     </column>
     <column>
      <property name="text">
-      <string>Titulo</string>
+      <string>Title</string>
      </property>
      <property name="font">
       <font>
@@ -177,7 +177,7 @@ background:rgb(167, 212, 235);</string>
     </column>
     <column>
      <property name="text">
-      <string>Duracion</string>
+      <string>Duration</string>
      </property>
      <property name="font">
       <font>
@@ -187,7 +187,7 @@ background:rgb(167, 212, 235);</string>
     </column>
     <column>
      <property name="text">
-      <string>Clasificacion</string>
+      <string>Rating</string>
      </property>
      <property name="font">
       <font>
@@ -289,7 +289,7 @@ color: rgb(0, 170, 255)</string>
      <rect>
       <x>300</x>
       <y>10</y>
-      <width>321</width>
+      <width>331</width>
       <height>31</height>
      </rect>
     </property>
@@ -298,7 +298,7 @@ color: rgb(0, 170, 255)</string>
 font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
-     <string>Gestion de Peliculas</string>
+     <string>Movie Management Module</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btnSalir">
@@ -318,7 +318,7 @@ border: 1px solid black;
 border-style: outset</string>
     </property>
     <property name="text">
-     <string>SALIR</string>
+     <string>EXIT</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btnEli">
@@ -339,7 +339,7 @@ border: 1px solid black;
 border-style: outset</string>
     </property>
     <property name="text">
-     <string>ELIMINAR</string>
+     <string>DELETE</string>
     </property>
    </widget>
    <widget class="QComboBox" name="comboClasi">
@@ -380,7 +380,7 @@ border: 1px solid black;
 border-style: outset</string>
     </property>
     <property name="text">
-     <string>NUEVA</string>
+     <string>NEW</string>
     </property>
     <property name="default">
      <bool>false</bool>
@@ -453,7 +453,7 @@ border: 1px solid black;
 border-style: outset</string>
     </property>
     <property name="text">
-     <string>GRABA</string>
+     <string>CONFIRM</string>
     </property>
     <property name="default">
      <bool>false</bool>
