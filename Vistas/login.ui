@@ -82,7 +82,7 @@
       <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
      </property>
      <property name="text">
-      <string>ID</string>
+      <string>ID - DNI</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="box_email">
