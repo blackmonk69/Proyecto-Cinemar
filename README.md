@@ -5,7 +5,9 @@
 to log in id-dni= 678901   password: admin   
 Remember to: pip install pqt5 (it is a requirement) and db browser if you want to manage the DB (SQL lite 3 format)   
 
-The design patter is Model-View Controller (MVC)
+The design patter is Model-View Controller (MVC)     
+
+To run the project execute main.py
 
 **Cinemar Management System**
 
